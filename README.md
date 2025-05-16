@@ -1,33 +1,35 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧑‍💻 Candidate Search Application
 
-Currently, two official plugins are available:
+This is a simple React-based GitHub candidate search application that allows users to browse potential candidates and curate a shortlist.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Features
 
-## Expanding the ESLint configuration
+* 🔍 On page load, the app fetches and displays one GitHub user at a time, including:
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  * Name
+  * Username
+  * Location
+  * Avatar
+  * Email (if available)
+  * GitHub Profile URL
+  * Company (if available)
 
-* Configure the top-level `parserOptions` property as follows:
+* ➕ Clicking the **“+”** button saves the candidate to a list of potential candidates and moves to the next profile.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* ➖ Clicking the **“−”** button skips the current candidate and moves to the next one without saving.
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+* 🚫 If no candidates are left to review, a message is displayed to indicate the end of the queue.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+### 💾 Persistence
+
+* Saved candidates are stored in **localStorage**, so they persist across page reloads.
+* On the **Saved Candidates** page, users can view their shortlist with full details.
+* If no candidates have been saved, the page displays a friendly message to indicate an empty list.
+
+### 🌐 Live Demo
+
+You can try the live version here:
+👉 [Deployed on Render]([https://your-app.onrender.com](https://candidatesearch-mp6u.onrender.com))
+
+
