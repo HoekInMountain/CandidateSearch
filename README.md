@@ -1,4 +1,5 @@
 
+
 ## 🧑‍💻 Candidate Search Application
 
 This is a simple React-based GitHub candidate search application that allows users to browse potential candidates and curate a shortlist.
@@ -30,6 +31,8 @@ This is a simple React-based GitHub candidate search application that allows use
 ### 🌐 Live Demo
 
 You can try the live version here:
-👉 [Deployed on Render]([https://candidatesearch-mp6u.onrender.com])  
+👉 [Deployed on Render](https://candidatesearch-mp6u.onrender.com)
+
+> Replace the Render link above with your actual deployed URL.
 
 
